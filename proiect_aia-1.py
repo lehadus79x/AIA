@@ -5,12 +5,12 @@ import json
 inventar = {}
 FISIER_INVENTAR = "inventar.json"
 
-# salveaza inventarul prin json
+# salveaza config
 def salveaza_inventar():
     with open(FISIER_INVENTAR, "w") as f:
         json.dump(inventar, f)
 
-# incarcare inventar prin json
+# incarcare config
 def incarca_inventar():
     global inventar
     try:
